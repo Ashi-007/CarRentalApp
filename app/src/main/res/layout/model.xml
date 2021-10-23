@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/carimg"
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/placeholder_img"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/car_name"
+            android:id="@+id/cartitle"
+            android:padding="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/carimg"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/car_price"
+            android:layout_marginTop="20dp"
+            android:id="@+id/carprice"
+            android:padding="5dp"
+            android:layout_below="@id/cartitle"
+            android:layout_toEndOf="@+id/carimg"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/fule_type"
+            android:id="@+id/fuletyp"
+            android:padding="5dp"
+            android:textStyle="italic"
+            android:layout_alignBottom="@id/carimg"
+            android:layout_toEndOf="@+id/carimg"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/book_now"
+            android:layout_marginStart="60dp"
+            android:layout_toEndOf="@+id/fuletyp"
+            android:layout_alignBottom="@+id/fuletyp"
+            android:textStyle="bold"
+            android:id="@+id/bkbtn"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
